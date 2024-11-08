@@ -32,4 +32,3 @@ const newPerson = {
     id: age
 };
 logDetails(newUser);
-logDetails(newPerson);

@@ -54,4 +54,3 @@ const newPerson: Person = {
 }
 
 logDetails(newUser);
-logDetails(newPerson);
