@@ -1,34 +1,36 @@
 "use strict";
-let someId;
-someId = 1;
-someId = "2";
-let age = 10;
-function swapIdType(id) {
-    if (typeof id === "string") {
-        return parseInt(id);
-    }
-    else {
-        return id.toString();
-    }
+const something = { quantity: 50 };
+function printQuantity(item) {
+    console.log(`the quantity of the item is ${item.quantity}`);
 }
-function logDetails(value) {
-    if (value.type === 'user') {
-        console.log(value.email, value.username);
-    }
-    if (value.type === 'person') {
-        console.log(value.email, value.username);
-    }
+function addNumbers(a, b) {
+    return a + b;
 }
-const newUser = {
-    type: 'user',
-    username: 'Mario',
-    email: 'mario@fungi.com',
-    id: someId
+function multiplyNumbers(first, second) {
+    return first * second;
+}
+function subtractNumbers(numOne, numTwo) {
+    return numOne - numOne;
+}
+let calcs = [];
+calcs.push(addNumbers);
+calcs.push(multiplyNumbers);
+calcs.push(subtractNumbers);
+let area;
+const shapeOne = {
+    name: 'square',
+    calcArea(l) {
+        area = l * l;
+        return area;
+    }
 };
-const newPerson = {
-    type: 'person',
-    username: 'Luigi',
-    email: 'luigi@fungi.com',
-    id: age
+const shapeTwo = {
+    name: 'circle',
+    calcArea(r) {
+        area = Math.PI * r ^ 2;
+        return area;
+    }
 };
-logDetails(newUser);
+shapeOne.calcArea(5);
+shapeTwo.calcArea(8);
+console.log(shapeOne.calcArea(5));
