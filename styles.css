@@ -1,0 +1,87 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    background-color: #181818;
+    color: white;
+}
+
+.banner{
+    position: relative;
+    box-sizing: border-box;
+}
+.banner h2{
+    position: relative;
+    font-size: 40px;
+    text-align: left;
+    left: 40%;
+    max-width: 1200px;
+    display: inline-block;
+    margin: 35px auto;
+}
+
+.profilePic{
+    max-width: 15%;
+    position: absolute;
+    border-radius: 100px;
+    display: inline-block;
+    left: 23%;
+    top: 10%;
+}
+
+nav ul{
+    position: relative;
+    display: block;
+    left: 50%;
+}
+
+nav li{
+    width: 33%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.banner p{
+    position: relative;
+    left: 40%;
+    max-width: 500px;
+}
+
+.projects{
+    border: 2px solid white;
+    margin: 20px auto;
+    max-width: 100%;
+    width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.projects img{
+    padding-left: 200px;
+    max-width: 395px;
+    max-height: 300px;
+    white-space: nowrap;
+}
+
+.projects div{
+    position: relative;
+    bottom: 85px;
+    display: inline-block;
+    width: 500px;
+    height: 10px;
+}
+
+.projects h3{
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.evil h3{
+    font-size: 41px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width:1400px) {
+    
+}
