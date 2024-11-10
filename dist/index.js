@@ -1,36 +1,24 @@
 "use strict";
-const something = { quantity: 50 };
-function printQuantity(item) {
-    console.log(`the quantity of the item is ${item.quantity}`);
-}
-function addNumbers(a, b) {
-    return a + b;
-}
-function multiplyNumbers(first, second) {
-    return first * second;
-}
-function subtractNumbers(numOne, numTwo) {
-    return numOne - numOne;
-}
-let calcs = [];
-calcs.push(addNumbers);
-calcs.push(multiplyNumbers);
-calcs.push(subtractNumbers);
-let area;
-const shapeOne = {
-    name: 'square',
-    calcArea(l) {
-        area = l * l;
-        return area;
+class Pizza {
+    constructor(title, price) {
+        this.base = "Classic";
+        this.toppings = [];
+        this.title = title;
+        this.price = price;
     }
-};
-const shapeTwo = {
-    name: 'circle',
-    calcArea(r) {
-        area = Math.PI * r ^ 2;
-        return area;
+    addTopping(topping) {
+        this.toppings.push(topping);
     }
-};
-shapeOne.calcArea(5);
-shapeTwo.calcArea(8);
-console.log(shapeOne.calcArea(5));
+    removeTopping(topping) {
+        this.toppings = this.toppings.filter((t) => t !== topping);
+    }
+    selectBase(b) {
+        this.base = b;
+    }
+}
+const pizza = new Pizza('mario special', 15);
+pizza.addTopping("olives");
+pizza.addTopping("mushrooms");
+pizza.removeTopping("olives");
+pizza.selectBase("Thick");
+console.log(pizza);

@@ -1,58 +1,36 @@
-interface hasQuantity{
-    quantity: number;
-}
 
-const something: hasQuantity = { quantity: 50};
+type Base = 'Classic' | 'Thick' | 'Thin' | 'Garlic'
 
-function printQuantity(item: hasQuantity): void{
-    console.log(`the quantity of the item is ${item.quantity}`);
-}
-
-
-type Calculator = (numOne: number, numTwo: number) => number;
-
-function addNumbers(a: number, b: number){
-    return a+b;
-}
-
-function multiplyNumbers(first: number, second: number){
-    return first * second;
-}
-
-function subtractNumbers(numOne: number, numTwo: number){
-    return numOne - numOne;
-}
-
-let calcs: Calculator[] = [];
-
-calcs.push(addNumbers);
-calcs.push(multiplyNumbers);
-calcs.push(subtractNumbers);
-
-interface HasArea{
-    name: string;
-    calcArea (a: number) : number;
-}
-
-let area: number;
-
-const shapeOne: HasArea = {
-    name: 'square',
-    calcArea (l: number){
-        area = l*l;
-        return area;
+class Pizza {
+    constructor(title: string, price: number){
+        this.title = title;
+        this.price = price;
     }
-}
 
-const shapeTwo: HasArea = {
-    name: 'circle',
-    calcArea(r: number){
-        area = Math.PI * r^2;
-        return area;
+    private title: string;
+    private price: number;
+    private base: Base = "Classic";
+    private toppings: string[] = [];
+
+    addTopping(topping: string) : void {
+        this.toppings.push(topping);
     }
+
+    removeTopping(topping: string) : void {
+        this.toppings = this.toppings.filter((t) => t !== topping)
+    }
+
+    selectBase(b: Base) : void {
+        this.base = b;
+    }
+
 }
 
-shapeOne.calcArea(5);
-shapeTwo.calcArea(8);
+const pizza = new Pizza('mario special', 15);
 
-console.log(shapeOne.calcArea(5));
+pizza.addTopping("olives");
+pizza.addTopping("mushrooms");
+pizza.removeTopping("olives");
+pizza.selectBase("Thick");
+
+console.log(pizza);
