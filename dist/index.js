@@ -1,10 +1,21 @@
 "use strict";
-class Pizza {
+class MenuItem {
     constructor(title, price) {
-        this.base = "Classic";
-        this.toppings = [];
         this.title = title;
         this.price = price;
+    }
+    get details() {
+        return `${this.title} - $${this.price}`;
+    }
+    format() {
+        return `This menun item is clalled ${this.title} and is $${this.price}`;
+    }
+}
+class Pizza extends MenuItem {
+    constructor(title, price) {
+        super(title, price);
+        this.base = "Classic";
+        this.toppings = [];
     }
     addTopping(topping) {
         this.toppings.push(topping);
@@ -17,8 +28,7 @@ class Pizza {
     }
 }
 const pizza = new Pizza('mario special', 15);
-pizza.addTopping("olives");
-pizza.addTopping("mushrooms");
-pizza.removeTopping("olives");
-pizza.selectBase("Thick");
-console.log(pizza);
+function printFormatted(val) {
+    console.log(val.format());
+}
+printFormatted(pizza);
