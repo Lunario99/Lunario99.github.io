@@ -1,4 +1,4 @@
-export default function Banner({name, description, image}:{
+export default function Intro({name, description, image}:{
     name: string,
     description: string,
     image: string

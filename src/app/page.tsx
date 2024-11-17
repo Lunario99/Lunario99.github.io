@@ -1,12 +1,12 @@
 import Project from "./Components/Projects";
-import Banner from "./Components/Banner";
+import Intro from "./Components/Intro";
 
 export default function Home(){
 
   return(
     <main className="background-custom">
       <div className="p-3">
-        <Banner
+        <Intro
           name="Daniele Moretti"
           description="A graduate game designer with a Bachelor of Design (Games) 
               from RMIT (Royal Melbourne Institute of Technology), 

@@ -14,7 +14,8 @@ title: string,
     const [isExpanded, setIsExpanded] = useState(false);
 
     return(
-        <div className="card mb-3 border-dark rounded-t-lg shadow transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-102 duration-300">
+        <div className="card mb-3 border-dark rounded-t-lg shadow transition ease-in-out 
+                    delay-150 hover:-translate-y-1 hover:scale-102 duration-300">
             <button 
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="w-full text-left"
@@ -27,28 +28,33 @@ title: string,
                             <li>Role: {role} </li>
                             <li>Engine: {engine}</li>
                         </ul>
-                        {isExpanded && description &&(
-                            <p className="mt-3 text-gray-300">{description}</p>
-                         )}
+                        <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+                            isExpanded ? "max-h-[500px]" : "max-h-0"}`}>
+                            {isExpanded && (
+                            <div className=" flex-wrap p-3 bg-dark text-white">
+                                {description && <p className="mt-3 text-gray-300">{description}</p>}
+                                {gallery.length > 0 && (
+                                <div className="row mt-3">
+                                    {gallery.map((img, index) => (
+                                    <div key={index} className="col-4 mb-3">
+                                        <img
+                                            src={img}
+                                            alt={`Additional image ${index + 1} for project: ${title}`}
+                                            className="img-fluid rounded"
+                                        />
+                                    </div>
+                                    ))}
+                                </div>
+                                )}
+                            </div>
+                            )}
+                        </div>
                     </div>
                     <div className="col-5">
                         <img src={image} alt="" style={{maxHeight: '320px'}} className="w-100 img-fluid rounded"/>
                     </div>                
                 </div>
             </button>
-            {isExpanded && gallery.length > 0 && (
-                <div className="card-body row p-3 m-0 bg-dark">
-                {gallery.map((img, index) => (
-                    <div key={index} className="col-4 mb-3">
-                    <img
-                        src={img}
-                        alt={`Additional image ${index + 1} for project: ${title}`}
-                        className="img-fluid rounded"
-                    />
-                    </div>
-                ))}
-                </div>
-            )}
         </div>
-    )
+  );
 }
