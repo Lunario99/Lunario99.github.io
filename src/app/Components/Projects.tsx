@@ -19,14 +19,13 @@ export default function Project({
   gallery?: string[];
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
-
   return (
     <div
       className="mb-3 border-dark bg-dark rounded shadow transition ease-in-out 
                     delay-150 hover:-translate-y-1 hover:scale-102 duration-300"
     >
       <div className="row text-white m-0">
-        <div className="col-7">
+        <div className="sm:col-7">
           <h2 className="mt-2 mb-2">{title}</h2>
           <ul>
             <li>Type: {type}</li>
@@ -41,7 +40,7 @@ export default function Project({
             }`}
           >
             {isExpanded && (
-              <div className=" flex-wrap bg-dark text-white">
+              <div className="flex-wrap bg-dark text-white">
                 {description && (
                   <p className="mt-3 text-gray-300">{description}</p>
                 )}
@@ -49,7 +48,7 @@ export default function Project({
             )}
           </div>
         </div>
-        <div className="p-2 col-4">
+        <div className="p-2 sm:col-5">
           <img
             src={image}
             alt=""
@@ -66,9 +65,9 @@ export default function Project({
             }`}
         >
           {gallery.length > 0 && (
-            <div className="row mt-3">
+            <div className="row mt-3 items-baseline">
               {gallery.map((img, index) => (
-                <div key={index} className="col-4 mb-3">
+                <div key={index} className="sm:col-4 mb-3">
                   <img
                     src={img}
                     alt={`Additional image ${index + 1} for project: ${title}`}
@@ -84,7 +83,7 @@ export default function Project({
           className="w-full text-left"
           aria-expanded={isExpanded}
         >
-          <p className="flex flex-col col-3 p-1 hover:bg-slate-500">
+          <p className="flex md:flex-col md:col-3 p-1 hover:bg-slate-500">
             Show more...
           </p>
         </button>
