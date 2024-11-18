@@ -48,7 +48,7 @@ export default function Project({
             )}
           </div>
         </div>
-        <div className="p-2 sm:col-5">
+        <div className="p-2 md:col-5">
           <img
             src={image}
             alt=""
@@ -67,7 +67,7 @@ export default function Project({
           {gallery.length > 0 && (
             <div className="row mt-3 items-baseline">
               {gallery.map((img, index) => (
-                <div key={index} className="sm:col-4 mb-3">
+                <div key={index} className="md:col-4 mb-3">
                   <img
                     src={img}
                     alt={`Additional image ${index + 1} for project: ${title}`}
