@@ -5,7 +5,7 @@ export default function GenericCarousel({ gallery }: { gallery: string[] }) {
     <Carousel className="md:w-[40%]" controls={false}>
       {gallery.map((img, index) => (
         <Carousel.Item key={index}>
-          <img src={img} className="w-100" />
+          <img src={img} className="w-100 rounded" />
         </Carousel.Item>
       ))}
     </Carousel>
