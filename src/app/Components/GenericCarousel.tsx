@@ -1,0 +1,13 @@
+import { Carousel } from "react-bootstrap";
+
+export default function GenericCarousel({ gallery }: { gallery: string[] }) {
+  return (
+    <Carousel className="md:w-[40%] w-full" controls={false}>
+      {gallery.map((img, index) => (
+        <Carousel.Item key={index}>
+          <img src={img} className="h-full" />
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  );
+}
