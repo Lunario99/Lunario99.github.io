@@ -1,3 +1,4 @@
+"use client"
 import GenericCarousel from "./GenericCarousel";
 
 export default function Project({
