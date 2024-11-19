@@ -1,9 +1,9 @@
 import Project from "./Components/Projects";
 import Intro from "./Components/Intro";
-export const metadata={
+export const metadata = {
   title: "Dan Portfolio",
-  description: "Game Design Portfolio"
-}
+  description: "Game Design Portfolio",
+};
 
 export default function Home() {
   return (
@@ -43,7 +43,11 @@ export default function Home() {
             role="Role: Programmer, UI/UX Designer, Audio Designer, Gameplay Designer"
             engine="Unity 3D - C#"
             description="Group project done in my last year of university."
-            gallery={["./img/Evil.png"]}
+            gallery={[
+              "./img/Evil/Evil.png",
+              "./img/Evil/EvilMenu.png",
+              "./img/Evil/Evil2.png",
+            ]}
           />
 
           <Project
