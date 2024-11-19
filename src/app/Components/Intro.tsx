@@ -8,11 +8,10 @@ export default function Intro({
   image: string;
 }) {
   return (
-    <div className="flex flex-col bg-dark border border-dark rounded-lg shadow md:flex-row">
+    <div className="flex flex-col bg-dark border border-dark rounded-lg shadow lg:flex-row">
       <img
-        className="object-cover rounded-t-lg h-96 md:w-48 md:h-full md:rounded-none md:rounded-s-lg"
+        className="object-cover object-top rounded-t-lg h-96 lg:w-48 lg:h-full lg:rounded-none lg:rounded-s-lg"
         src={image}
-        alt=""
       />
       <div className="flex flex-col items-start p-4 leading-normal bg-dark md:col-5">
         <h2 className="">{name}</h2>
