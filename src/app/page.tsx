@@ -12,7 +12,7 @@ export default function Home() {
               from RMIT (Royal Melbourne Institute of Technology), 
               where I achieved Distinction and developed expertise in game design, narrative development, 
               and interactive experiences."
-            image="/img/MyPic.png"
+            image="./img/MyPic.png"
           />
         </div>
         <div className="p-2">
@@ -39,7 +39,7 @@ export default function Home() {
             role="Role: Programmer, UI/UX Designer, Audio Designer, Gameplay Designer"
             engine="Unity 3D - C#"
             description="Group project done in my last year of university."
-            gallery={["/img/Evil.png"]}
+            gallery={["./img/Evil.png"]}
           />
 
           <Project
@@ -48,7 +48,7 @@ export default function Home() {
             role="Role: Game Designer, Game Developer"
             engine="Unity 3D - C#"
             description="Solo project that focuses on procedural generation."
-            gallery={["/img/Forest.png"]}
+            gallery={["./img/Forest.png"]}
           />
         </div>
       </div>
