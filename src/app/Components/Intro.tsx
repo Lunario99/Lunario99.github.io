@@ -59,7 +59,7 @@ export default function Intro({
             </svg>
             <p className="flex flex-col items-center">Itch.io</p>
           </a>
-          <a href="/img/Moretti Resume.pdf" className="m2">
+          <a href="./img/Moretti Resume.pdf" className="m2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

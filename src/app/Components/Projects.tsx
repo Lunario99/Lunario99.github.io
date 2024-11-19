@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import GenericCarousel from "./GenericCarousel";
 
 export default function Project({
@@ -17,7 +15,6 @@ export default function Project({
   description: string;
   gallery: string[];
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div
       className="mb-3 border-dark bg-dark rounded shadow transition ease-in-out 
