@@ -9,10 +9,6 @@
     color: white;
 }
 
-.border-bottom-custom {
-    border-bottom: 1px solid white;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-size: revert;
     font-weight: revert;
