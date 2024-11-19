@@ -8,7 +8,7 @@ export const metadata={
 export default function Home() {
   return (
     <main className="background-custom">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto p-4">
         <div className="p-2">
           <Intro
             name="Daniele Moretti"

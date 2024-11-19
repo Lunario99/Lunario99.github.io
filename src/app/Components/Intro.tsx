@@ -13,7 +13,7 @@ export default function Intro({
         className="object-cover object-top rounded-t-lg h-96 lg:w-48 lg:h-full lg:rounded-none lg:rounded-s-lg"
         src={image}
       />
-      <div className="flex flex-col items-start p-4 leading-normal bg-dark md:col-5">
+      <div className="flex flex-col items-start p-4 leading-normal bg-dark lg:col-5">
         <h2 className="">{name}</h2>
         <div className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
           <p>{description}</p>
