@@ -15,7 +15,7 @@ export default function Intro({
       />
       <div className="flex flex-col items-start p-4 leading-normal bg-dark lg:col-5">
         <h2 className="">{name}</h2>
-        <div className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className="text-xl font-bold tracking-tight dark:text-white">
           <p>{description}</p>
         </div>
       </div>
