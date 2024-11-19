@@ -1,5 +1,9 @@
 import Project from "./Components/Projects";
 import Intro from "./Components/Intro";
+export const metadata={
+  title: "Dan Portfolio",
+  description: "Game Design Portfolio"
+}
 
 export default function Home() {
   return (
