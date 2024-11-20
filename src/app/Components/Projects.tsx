@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import GenericCarousel from "./GenericCarousel";
 
 export default function Project({
@@ -21,7 +21,7 @@ export default function Project({
       className="mb-3 border-dark bg-dark rounded shadow transition ease-in-out 
                     delay-150 hover:-translate-y-1 hover:scale-102 duration-300"
     >
-      <div className="row text-white m-0">
+      <div className="row mb-2 text-white m-0">
         <div>
           <h2 className="mt-2 mb-2">{title}</h2>
         </div>
