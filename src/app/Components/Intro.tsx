@@ -1,3 +1,4 @@
+"use client";
 export default function Intro({
   name,
   description,
@@ -14,7 +15,7 @@ export default function Intro({
         src={image}
       />
       <div className="flex flex-col items-start p-4 leading-normal bg-dark lg:col-5">
-        <h2 className="">{name}</h2>
+        <h2 className=" text-5xl pb-2">{name}</h2>
         <div className="text-xl font-bold tracking-tight dark:text-white">
           <p>{description}</p>
         </div>

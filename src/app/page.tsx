@@ -5,10 +5,10 @@ import Intro from "./Components/Intro";
 export default function Home() {
   return (
     <main className="background-custom">
-      <div className="container mx-auto p-4">
+      <div className="container">
         <div className="p-2">
           <Intro
-            name="Daniele Moretti"
+            name="Dan"
             description="A graduate game designer with a Bachelor of Design (Games) 
               from RMIT (Royal Melbourne Institute of Technology), 
               where I achieved Distinction and developed expertise in game design, narrative development, 
@@ -17,6 +17,9 @@ export default function Home() {
           />
         </div>
         <div className="p-2">
+          <h1 className="text-center mb-2 text-6xl pb-3">
+            <span>Highligts</span>
+          </h1>
           <Project
             title="Tower of Steel"
             type="Personal Solo Project"
@@ -37,9 +40,13 @@ export default function Home() {
           <Project
             title="Evil and the Wizard's Tower"
             type="University Group Project"
-            role="Role: Programmer, UI/UX Designer, Audio Designer, Gameplay Designer"
+            role="Programmer, UI/UX Designer, Audio Designer, Gameplay Designer"
             engine="Unity 3D - C#"
-            description="Group project done in my last year of university."
+            description="Group project done in my last year of university. This project thought me
+            what it means to work as a team and to share a goal. I am a meticulus person and I
+            tend to do everything myself but, with this project, considering the deadlines and
+            the ammount of work to do I had to take my cooperation skills to the next level to be 
+            able achieve the final goal for the whole group."
             gallery={[
               "./img/Evil/Evil.png",
               "./img/Evil/EvilMenu.png",
@@ -50,10 +57,27 @@ export default function Home() {
           <Project
             title="Infinite World"
             type="University Solo Project"
-            role="Role: Game Designer, Game Developer"
+            role="Game Designer, Game Developer"
             engine="Unity 3D - C#"
-            description="Solo project that focuses on procedural generation."
+            description="Solo project that focuses on procedural generation. With this project I tried
+            to push my programming skills at the time by making a completely precedural and auto generated
+            level using unity prefabs and also generating meshes."
             gallery={["./img/Forest.png"]}
+          />
+          <Project
+            title="Game a Week Compilation"
+            type="University Weekly Solo Projects"
+            role="Game Designer, Game Developer"
+            engine="Unity 3D - C#"
+            description="Weekly solo projects for university class."
+            gallery={[
+              "./img/Compilation/CompMainMenu.png",
+              "./img/Compilation/Elevator.png",
+              "./img/Compilation/GetItThere.png",
+              "./img/Compilation/SeeThrough.png",
+              "./img/Compilation/SleepFall.png",
+              "./img/Compilation/TheRainGame.png",
+            ]}
           />
         </div>
       </div>
