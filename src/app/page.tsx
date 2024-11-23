@@ -1,4 +1,3 @@
-"use client";
 import Project from "./Components/Projects";
 import Intro from "./Components/Intro";
 
