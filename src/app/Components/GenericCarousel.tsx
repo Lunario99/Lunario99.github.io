@@ -3,10 +3,10 @@ import { Carousel } from "react-bootstrap";
 
 export default function GenericCarousel({ gallery }: { gallery: string[] }) {
   return (
-    <Carousel className="md:w-[40%] pb-2" controls={false}>
+    <Carousel className="md:w-[40%] pb-3" controls={false}>
       {gallery.map((img, index) => (
         <Carousel.Item key={index}>
-          <img src={img} className="w-100 rounded h-100" />
+          <img src={img} className="rounded w-100" />
         </Carousel.Item>
       ))}
     </Carousel>
