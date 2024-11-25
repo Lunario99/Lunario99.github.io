@@ -19,7 +19,7 @@ export default function Intro({
           <p>{description}</p>
         </div>
       </div>
-      <div className="flex flex-col p4 md:col-5 items-center">
+      <div className="flex flex-col p4 md:pt-10 md:col-5 items-center">
         <div className="flex flex-row items-baseline md:m-5">
           <a
             href="https://www.linkedin.com/in/daniele-moretti-693a82302/"
