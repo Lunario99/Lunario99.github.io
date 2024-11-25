@@ -32,7 +32,6 @@ export default function Home() {
               "./img/TOS/Rob1.png",
               "./img/TOS/Rob2.png",
               "./img/TOS/Rob3.png",
-              "./img/TOS/Pause.png",
             ]}
           />
 
