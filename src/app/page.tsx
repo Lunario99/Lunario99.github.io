@@ -29,7 +29,7 @@ export default function Home() {
             C#, animation  and game design for 2D development. This project showed me that I wanted to make games and
             that I needed to take my knowledge to the next level to be able to create the games I really wanted to make."
             gallery={[
-              "./img/ToS/pause.png",
+              "./img/ToS/Pause.png",
               "./img/ToS/Rob1.png",
               "./img/ToS/Rob2.png",
               "./img/ToS/Rob3.png",
